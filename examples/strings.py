@@ -12,8 +12,8 @@ formatted_string = f"My name is {full_name} and I am {age} years old."
 print(formatted_string)
 
 # Example of splitting a string
-sentence = "Hello how are you?"
-words = sentence.split(" ")
+sentence = "Hello,how,are,you?"
+words = sentence.split(",")
 print(words)
 
 # Example of joining strings

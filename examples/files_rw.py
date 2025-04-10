@@ -14,7 +14,11 @@ def append_student_to_file(filename, student, grade):
 # Функція для читання даних з файлу
 def read_group_file(filename):
     with open(filename, "r") as file:
-        return [line.strip().split(",") for line in file.readlines()]
+        lines = file.readlines()
+
+        return [
+            line.strip().split(",") for line in lines
+            ]
 
 
 # Приклад використання
@@ -22,5 +26,16 @@ def read_group_file(filename):
 #create_group_file("group1.txt", students_group1)
 #append_student_to_file("group1.txt", "Анна", 88.0)
 
-print(read_group_file("group1.txt"))
+students = read_group_file("group1.txt")
+
+studentsWithYear = []
+
+for student, grade in students:
+    studentsWithYear.append((student, grade, 2023))
+
+print(studentsWithYear)
+
+
+
+
 

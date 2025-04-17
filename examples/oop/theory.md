@@ -7,7 +7,7 @@ Object-Oriented Programming (OOP) is a programming paradigm organized around obj
 
 In Python, OOP is implemented using:
 Classes and objects
-Encapsulation
 Inheritance
 Polymorphism
+Encapsulation
 Abstraction

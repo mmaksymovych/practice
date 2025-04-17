@@ -15,6 +15,10 @@ class Employee:
 alice = Employee(101, "Alice", 4000)
 bob = Employee(102, "Bob", 5000)
 
+alice.name
+alice.get_details()
+bob.get_details()
+
 
 
 

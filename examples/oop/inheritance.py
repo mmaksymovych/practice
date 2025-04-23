@@ -1,28 +1,21 @@
 
 class Employee:
-    def __init__(self, emp_id, name, years_experience):
+    def __init__(self, emp_id, name, salary, years_experience):
         self.emp_id = emp_id
         self.name = name
         self._years_experience = years_experience
+        self._salary = salary
 
     def get_details(self):
         return f"Employee ID: {self.emp_id}, Name: {self.name}"
     
     def calculate_salary(self):
         # Basic salary calculation logic
-        return self.__salary
-
-class Practician:
-    def __init__(self, emp_id, name, years_experience):
-        self.emp_id = emp_id
-        self.name = name
-        self._years_experience = years_experience
-
-    def practice(self): 
-        print(f"{self.name} is practicing!")
+        return self._salary
 
 
-class JuniorEmployee(Practician, Employee):
+
+class JuniorEmployee(Employee):
     def learn(self):
         print(f"{self.name} is learning new skills!")
 
@@ -30,7 +23,7 @@ class JuniorEmployee(Practician, Employee):
             return f"Years: {self._years_experience}"
 
     
-bob = JuniorEmployee(101, "bob", 2)
+bob = JuniorEmployee(101, "bob", 1000, 2)
 
 
 

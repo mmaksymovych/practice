@@ -25,9 +25,6 @@ class Employee(ABC):
 
 class JuniorEmployee(Employee):
 
-    def calculate_salary(self, salary):
-        return salary * 1.25
-
     def get_details(self):
         return (f"[{self.__class__.__name__}] ID: {self.emp_id}, Name: {self.name}, "
                 f"Years of Experience: {self.years_experience}, "

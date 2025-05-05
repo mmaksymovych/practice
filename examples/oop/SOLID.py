@@ -72,6 +72,8 @@ class Employee:
             return 3500
         elif self.role == 'producmanaher':
             return 4500
+        elif self.role == 'tesrer':
+            return 4500
         
 #GOOD
 from abc import ABC, abstractmethod
@@ -203,3 +205,4 @@ mysql = MySQLDatabase()
 mongoDatabase = MongoDatabase()
 
 john = EmployeeManager(mongoDatabase)
+smoth = EmployeeManager(mysql)

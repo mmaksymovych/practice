@@ -11,6 +11,11 @@ class Employee:
     
     def calculate_salary(self):
         # Basic salary calculation logic
+        bonus = self._salary * 0.1 * self._years_experience
+        self._salary = self._salary + bonus
+
+    
+    def get_salary(self):
         return self._salary
 
 
@@ -24,7 +29,7 @@ class JuniorEmployee(Employee):
 
     
 bob = JuniorEmployee(101, "bob", 1000, 2)
-
+bob.calculate_salary()
 
 
 print(bob.get_years())

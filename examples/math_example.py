@@ -20,3 +20,4 @@ absolute_value = math.fabs(x)
 # Printing results
 print(f"Square of {x}: {square}")
 print(f"Absolute value of {x}: {absolute_value}")
+print(f"End of the program")
